@@ -11,29 +11,15 @@
 
 
   // PARALLAX ON SCROLL
+  //----------------------------------
   $(window).scroll(function () {
 
     var wScroll = $(document).scrollTop();
 
     $('.header-title').css({
-      transform: 'translateY(' + wScroll / 8 + '%)'
+      transform: 'translateY(' + wScroll / 6 + '%)'
     });
 
-
-    // if(wScroll >= 200) {
-    //
-    //   $('.scissor').css({
-    //     transform: 'translateY(' + wScroll + '%)'
-    //   });
-    //
-    // }
-
-
-    // console.log(wScroll);
-
   });
-
-  // console.log($('.scissor').offset().top);
-
 
 })();
